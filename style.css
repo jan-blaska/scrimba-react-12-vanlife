@@ -1,0 +1,222 @@
+/* -- RESET -- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* -- LAYOUT -- */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    background-color: #1C1C1C;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.container {
+    width: 95vw; 
+}
+
+@media (min-width: 1000px ) {
+    .container {
+        width: 950px; 
+    }
+}
+
+.link-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem; /* 16px */
+    font-weight: 700;
+    text-align: center;
+    font-family: inherit;
+}
+
+.link-btn:hover {
+    cursor: pointer;
+}
+
+/* HEADER */
+header {
+    background-color: #FFF7ED;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-size: 1rem; /* 16px */
+    font-weight: 600;
+    position: relative;
+}
+
+nav a:hover {
+    color: #161616;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    
+}
+
+.nav--link-main {
+    font-size: 1.5rem; /* 24px */
+    color: #000;
+    font-weight: 900;
+    margin: 0;
+}
+
+.links-to-pages {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > h1 {
+    color: #AAA;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+}
+
+/* HOME PAGE */
+.section--home {
+    background: rgba(0,0,0,0.5) url("/van-dark.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: 20%;
+    color: #FFF;
+    padding: 65px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 180px);
+}
+
+.section--home h1 {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 800;
+    line-height: 1.15em; 
+    margin: 0;
+}
+
+.section--home p {
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+    line-height: 1.5em; /* 24px */
+    margin: 22px 0 110px;
+}
+
+.section--home-link-btn {
+    border-radius: 5px;
+    background-color: #FF8C38;
+    color: #FFF;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.section--home-link-btn:hover {
+    background-color: #fca262;
+}
+
+@media (min-width: 1000px ) {
+    .section--home h1 {
+        font-size: 4rem; /* 64px */
+    }
+    .section--home p {
+        margin: 22px 0 150px;
+    }
+}
+
+/* ABOUT */
+.section--about {
+    background-color: #FFF7ED;
+    color: #161616;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.section--about-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 0 78%;
+}
+
+.section--about-text {
+    padding: 50px 25px;
+}
+
+.section--about-text h1 {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    line-height: 1.2em; /* 120% */
+    margin: 0 0 30px;
+}
+
+.section--about-text p {
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+    line-height: 1.35em; /* 135% */
+    margin: 15px 0;
+}
+
+.section--about-explore {
+    background-color: #FFCC8D;
+    border-radius: 5px;
+    padding: 32px 37px;
+    margin-top: 50px;
+}
+
+.section--about-explore > h2 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+    line-height: 1.25em; /* 125% */
+    margin: 0;
+}
+
+.section--about-explore-link-btn {
+    background-color: #161616;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 22px;
+    margin-top: 25px;
+}
+
+.section--about-explore-link-btn:hover {
+    background-color: #414141;
+}
