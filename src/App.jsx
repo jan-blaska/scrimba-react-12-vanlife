@@ -1,10 +1,13 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Layout from "./components/Layout"
 import Home from './pages/Home.jsx'
+import HostLayout from "./components/HostLayout"
+import Dashboard from './pages/Host/Dashboard.jsx'
+import Income from './pages/Host/Income.jsx'
+import Reviews from './pages/Host/Reviews.jsx'
 import About from './pages/About.jsx'
-import Vans from './pages/Vans.jsx'
-import VanDetail from './pages/VanDetail.jsx'
+import Vans from './pages/Vans/Vans.jsx'
+import VanDetail from './pages/Vans/VanDetail.jsx'
 
 
 
@@ -12,14 +15,20 @@ export default function App() {
 
 	return (
 		<BrowserRouter>
-			<Header />
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/vans" element={<Vans />} />
-				<Route path="/vans/:id" element={<VanDetail />} />
+				<Route path="/" element={<Layout />}>
+					<Route index element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/vans" element={<Vans />} />
+					<Route path="/vans/:id" element={<VanDetail />} />
+					
+					<Route path="host" element={<HostLayout />} >
+						<Route index element={<Dashboard />} />
+						<Route path="income" element={<Income />} />
+						<Route path="reviews" element={<Reviews />} />
+					</Route>
+				</Route>
 			</Routes>
-			<Footer />
 		</BrowserRouter>
 	)
 }

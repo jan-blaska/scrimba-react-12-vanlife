@@ -24,6 +24,15 @@ body::-webkit-scrollbar {
     display: none;
   }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF7ED;
+    min-height: calc(100vh - 180px);
+    color: #161616;
+    font-family: inherit;
+}
+
 .container {
     width: 95vw; 
 }
@@ -71,11 +80,11 @@ nav a {
     position: relative;
 }
 
-nav a:hover {
+nav a:hover,
+.nav-link-selected {
     color: #161616;
     text-decoration: underline;
-    text-underline-offset: 4px;
-    
+    text-underline-offset: 4px;  
 }
 
 .nav--link-main {
@@ -352,4 +361,17 @@ footer {
     line-height: 1.5em; /* 150% */
     margin: 10px 0 20px;
 }
+
+/* HOST */
+/* for other info about styling nav, see the css for header component */
+.host-nav {
+    height: 100px;
+    gap: 20px;
+}
+
+.host-nav a {
+    font-size: 1.125rem; /* 18px */
+}
+
+
 
