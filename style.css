@@ -373,5 +373,153 @@ footer {
     font-size: 1.125rem; /* 18px */
 }
 
+/* HOST VANS */
+.host-vans {
+    font-family: 'Inter', sans-serif;
+    padding: 20px 25px 50px;  
+}
 
+.host-vans-header {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    line-height: 1.1em; /* 110% */
+    margin: 0 0 32px;
+    color: #161616;
+}
 
+.host-vans-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.host-vans-grid > a {
+    text-decoration: none;
+}
+
+.host-van-card {
+    background-color: #fff;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    color: #161616;
+    border-radius: 10px;
+}
+
+.host-van-card > img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.host-van-card--name {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+    line-height: 1.6em; /* 160% */
+    margin: 0;
+}
+
+.host-van-card--price {
+    color: #4D4D4D;
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+    line-height: 2em; /* 200% */
+    margin: 0;
+}
+
+@media (min-width: 800px) {
+    .host-vans-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+/* HOST VAN DETAIL */
+.host-van-detail {
+    padding: 25px;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+    color: #161616;
+    font-weight: 700;
+}
+
+.host-van-detail-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.host-van-detail-card > img {
+    width: 160px;
+    margin-right: 20px;
+}
+
+.host-van-detail-card--desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.host-van-detail-card--desc > h1 {
+    font-size: 1.625rem; /* 26px */
+    line-height: 1.05em; /* 105% */
+    margin: 0;
+}
+
+.host-van-detail-card--desc > p {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.85em; /* 185% */
+    margin: 0;
+    font-weight: 500;
+}
+
+.host-van-detail-nav {
+    display: flex;
+    gap: 20px;  
+    padding-left: 0;
+    height: 70px;  
+}
+
+.host-van-detail-wrapper {
+    padding: 0 25px;
+}
+
+.host-van-detail-wrapper > a {
+    display: block;
+    color: #201F1D;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+    line-height: 1.4em; /* 140% */
+    margin-bottom: 25px;
+}
+
+.host-van-detail-wrapper > a:hover {
+    color: #706c64;
+}
+
+.host-van-detail-info > p {
+    color: #161616;
+    font-family: inherit;
+    font-size: 0.9rem; /* 14.4px */ 
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.host-van-detail-info > p:last-child {
+    margin-bottom: 0;
+}
+
+.host-van-detail-pricing > p {
+    color: #161616;
+    font-family: inherit;
+    font-size: 1.5rem; /* 24px */
+    font-weight: 400;
+    margin: 0;
+}
+
+.host-van-detail-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}

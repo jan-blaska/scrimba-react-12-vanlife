@@ -8,19 +8,26 @@ export default function HostLayout() {
             <div className="container">
                 <nav className="host-nav">
                     <NavLink 
-                        to="/host"
+                        to="."
+                        end
                         className={({isActive}) => isActive ? "nav-link-selected" : null }
                     >
                         Dashboard
                     </NavLink>
                     <NavLink 
-                        to="/host/income"
+                        to="income"
                         className={({isActive}) => isActive ? "nav-link-selected" : null }
                     >
                         Income
                     </NavLink>
                     <NavLink 
-                        to="/host/reviews"
+                        to="vans"
+                        className={({isActive}) => isActive ? "nav-link-selected" : null }
+                    >
+                        Vans
+                    </NavLink>
+                    <NavLink 
+                        to="reviews"
                         className={({isActive}) => isActive ? "nav-link-selected" : null }
                     >
                         Reviews
