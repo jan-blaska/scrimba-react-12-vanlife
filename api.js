@@ -7,7 +7,8 @@ import {
     getDocs,
     getDoc,
     query,
-    where
+    where,
+    setDoc
 } from "firebase/firestore/lite"
 
 const firebaseConfig = {
@@ -22,6 +23,12 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
+
+
+// adding the van to database
+/*
+await setDoc(doc(db, "vans", "3"), { id: "3", name: "Reliable Red", price: 100, description: "Reliable Red is a van that was made for travelling. The inside is comfortable and cozy, with plenty of space to stretch out in. There's a small kitchen, so you can cook if you need to. You'll feel like home as soon as you step out of it.", imageUrl: "https://assets.scrimba.com/advanced-react/react-router/reliable-red.png", type: "luxury", hostId: "456" })
+*/
 
 const vansCollectionRef = collection(db, "vans")
 
