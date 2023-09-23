@@ -5,7 +5,9 @@
   - BrowserRouter, Routes, Route, Link, NavLink
   - useParams() ... reading the URL
   - useOutletContext() ... passing down the data to the child route 
-  - useSearchParams()
+  - useSearchParams() ... reading the filters applied in the URL
+  - useLocation ... useful, if we have applied filters, we go to another page to for example see the detail of product, and then, we want to come back and still have the filters applied
+  - 404 Page
 - React
   - hooks - useState(), useEffect()
 - JS
