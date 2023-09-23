@@ -48,7 +48,7 @@ export default function HostVans() {
 
     return (
         <div className="host-vans">
-            <h1 className="host-vans-header">Your listed vans</h1>
+            <h1 className="header-36">Your listed vans</h1>
             <div className="host-vans-grid">
                 {hostVansElements}
             </div>

@@ -8,10 +8,20 @@ img {
 	display: block;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #161616;
+    font-family: 'Inter', sans-serif;
+}
+
 /* -- LAYOUT -- */
 body {
     font-family: 'Inter', sans-serif;
-    color: #000;
+    color: #161616;
     background-color: #1C1C1C;
     margin: 0;
     padding: 0;
@@ -29,8 +39,6 @@ body::-webkit-scrollbar {
     justify-content: center;
     background-color: #FFF7ED;
     min-height: calc(100vh - 180px);
-    color: #161616;
-    font-family: inherit;
 }
 
 .container {
@@ -57,6 +65,48 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
+.white {
+    color: #fff;
+}
+
+.grey {
+    color: #4D4D4D;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.header-48 {
+    font-size: 3rem; /* 48px */ 
+    font-weight: 800;
+}
+
+.header-36 {
+    font-size: 2.25rem; /* 36px */ 
+    font-weight: 700;
+}
+
+.header-24 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+}
+
+.header-20 {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+}
+
+.paragraph {
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+}
+
+.paragraph-bold {
+    font-size: 1rem; /* 16px */
+    font-weight: 600;
+}
+
 /* HEADER */
 header {
     background-color: #FFF7ED;
@@ -73,7 +123,6 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     color: #4D4D4D;
     font-size: 1rem; /* 16px */
     font-weight: 600;
@@ -185,8 +234,6 @@ footer {
 /* ABOUT */
 .section--about {
     background-color: #FFF7ED;
-    color: #161616;
-    font-family: inherit;
     display: flex;
     justify-content: center;
 }
@@ -248,17 +295,16 @@ footer {
     justify-content: center;
     background-color: #FFF7ED;
     min-height: calc(100vh - 180px);
-    color: #161616;
-    font-family: inherit;
 }
 
 .section--vans-wrapper {
-    padding: 10px 25px 70px;
+    padding: 50px 25px 70px;
 }
 
 .section--vans-main-header {
     font-size: 2rem; /* 32px */
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .section--vans-filters {
@@ -335,9 +381,6 @@ footer {
 }
 
 .vans-card a {
-    text-decoration: none;
-    color: #161616;
-    font-family: inherit;
     display: inline-block;
 }
 
@@ -352,6 +395,7 @@ footer {
 }
 
 .vans-card--name > h3 {
+    margin-top: 20px;
     margin-bottom: 0;
     font-size: 1.25rem; /* 20px */
     font-weight: 600;
@@ -392,8 +436,6 @@ footer {
     justify-content: center;
     background-color: #FFF7ED;
     min-height: calc(100vh - 180px);
-    color: #161616;
-    font-family: inherit;
 }
 
 .link-back-to-vans {
@@ -461,26 +503,14 @@ footer {
 
 /* HOST VANS */
 .host-vans {
-    font-family: 'Inter', sans-serif;
-    padding: 20px 25px 50px;  
-}
-
-.host-vans-header {
-    font-size: 2rem; /* 32px */
-    font-weight: 700;
-    line-height: 1.1em; /* 110% */
-    margin: 0 0 32px;
-    color: #161616;
+    padding: 0px 25px 50px;  
 }
 
 .host-vans-grid {
+    margin-top: 32px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-}
-
-.host-vans-grid > a {
-    text-decoration: none;
 }
 
 .host-van-card {
@@ -488,7 +518,6 @@ footer {
     padding: 20px 25px;
     display: flex;
     align-items: center;
-    color: #161616;
     border-radius: 10px;
 }
 
@@ -523,8 +552,6 @@ footer {
 .host-van-detail {
     padding: 25px;
     background-color: #fff;
-    font-family: 'Inter', sans-serif;
-    color: #161616;
     font-weight: 700;
 }
 
@@ -569,8 +596,6 @@ footer {
 }
 
 .host-van-detail-info > p {
-    color: #161616;
-    font-family: inherit;
     font-size: 0.9rem; /* 14.4px */ 
     font-weight: 500;
     line-height: 1.5em;
@@ -587,7 +612,6 @@ footer {
     font-family: inherit;
     font-size: 1.5rem; /* 24px */
     font-weight: 400;
-    margin: 0;
 }
 
 .host-van-detail-photos {
@@ -623,12 +647,10 @@ footer {
 }
 
 .page-not-found > a {
-    text-decoration: none;
     text-align: center;
     border-radius: 10px;
     border: none;
     background-color: #FFF7ED;
-    color: #161616;
     font-weight: 700;
     width: 100%;
     padding: 15px 0;
@@ -648,7 +670,6 @@ footer {
 /* LOGIN PAGE */
 .login-page {
     padding: 25px 25px 70px;
-    font-family: 'Inter', sans-serif;
 }
 
 .login-page > h3 {
@@ -657,7 +678,6 @@ footer {
 }
 
 .login-page > h1 {
-    color: #161616;
     text-align: center;
     font-size: 2rem; /* 32px */
     font-weight: 700;
@@ -695,7 +715,6 @@ footer {
 }
 
 .login-page > p {
-    color: #161616;
     text-align: center;
     font-size: 1rem; /* 16px */
     font-weight: 500;
@@ -713,6 +732,125 @@ footer {
     background-color: #161616;
     cursor: wait;
 }
+
+/* DASHBOARD */
+.dashboard {
+    padding: 0 25px 70px;
+}
+
+.dashboard--welcome-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 10px;
+}
+
+.dashboard--review-link {
+    display: flex;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.star {
+    color: #FF8C38;
+}
+
+.dashboard--review-link .star {
+    margin-left: 15px;
+}
+
+.dashboard--review-link > a {
+    margin-left: auto;
+}
+
+.dashboard--vans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* INCOME */
+.income {
+    padding: 0 25px 70px;
+}
+
+.income > img {
+    width: 100%;
+    margin: 60px auto 0;
+    display: block;
+}
+
+.income > p {
+    margin: 30px 0 10px;
+}
+
+@media (min-width: 600px) {
+    .income > img {
+        width: 600px;
+    }
+}
+
+.income-transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 30px;
+}
+
+.income-transactions-grid {
+    display: grid;
+    grid-gap: 20px;
+}
+.income-transaction {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 30px;
+}
+
+/* REVIEWS */
+.reviews {
+    padding: 0 25px 70px;
+}
+
+.reviews-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.reviews > img {
+    width: 100%;
+    margin: 60px auto 80px;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .reviews > img {
+        width: 600px;
+    }
+}
+
+.reviews-review {
+    border-bottom: 1px solid #C7C7C7;
+    padding: 30px 0;
+}
+
+.reviews-review .star {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.reviews-review > p {
+    margin-top: 10px;
+}
+
+
+
+
+
 
 
 
